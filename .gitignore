@@ -1,0 +1,19 @@
+# Repo-level ignores for generated build outputs
+
+# .NET build outputs (top-level and nested)
+/backend/build-out*
+backend/**/build-out*
+backend/**/bin/
+backend/**/obj/
+
+# Compiled artifacts from backend builds
+backend/**/*.dll
+backend/**/*.exe
+backend/**/*.pdb
+backend/**/*.deps.json
+backend/**/*.runtimeconfig.json
+backend/**/*staticwebassets.endpoints.json
+
+# Node / frontend (covered by frontend/.gitignore but keep safe)
+frontend/node_modules/
+frontend/.next/
